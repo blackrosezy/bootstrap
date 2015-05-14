@@ -9,7 +9,6 @@
 .alert {
   padding: @alert-padding;
   margin-bottom: @line-height-computed;
-  border: 1px solid transparent;
   border-radius: @alert-border-radius;
 
   // Headings for larger alerts
@@ -22,6 +21,9 @@
   // Provide class for links that match alerts
   .alert-link {
     font-weight: @alert-link-font-weight;
+    border-radius: @border-radius-base;
+    padding: 0 5px 0 5px;
+    margin: 0 1px 0 1px;
   }
 
   // Improve alignment and spacing of inner content
