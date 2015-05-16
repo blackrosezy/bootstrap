@@ -2,11 +2,11 @@
 
 .list-group-item-variant(@state; @background; @color) {
   .list-group-item-@{state} {
-    color: @color;
+    color: #fff;
     background-color: @background;
 
     a& {
-      color: @color;
+      color: #fff;
 
       .list-group-item-heading {
         color: inherit;
@@ -14,7 +14,7 @@
 
       &:hover,
       &:focus {
-        color: @color;
+        color: lighten(@color, 95%);
         background-color: darken(@background, 5%);
       }
       &.active,
